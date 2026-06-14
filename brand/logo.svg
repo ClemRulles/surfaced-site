@@ -1,0 +1,17 @@
+<svg width="240" height="56" viewBox="0 0 240 56" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Surfaced">
+  <defs>
+    <linearGradient id="sf-g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <!-- mark : signal qui "remonte à la surface" (détecté par l'IA) -->
+  <rect x="4" y="4" width="48" height="48" rx="13" fill="url(#sf-g)"/>
+  <g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity="0.95">
+    <path d="M20 36 A8 8 0 0 1 36 36" opacity="0.55"/>
+    <path d="M15 36 A13 13 0 0 1 41 36" opacity="0.8"/>
+  </g>
+  <circle cx="28" cy="36" r="3.4" fill="#fff"/>
+  <!-- wordmark -->
+  <text x="66" y="36" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700" fill="#0a0b14" letter-spacing="0.5">Surfaced</text>
+</svg>
