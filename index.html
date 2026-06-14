@@ -79,6 +79,10 @@
   .card:hover{transform:translateY(-4px);border-color:rgba(99,102,241,.4);box-shadow:0 20px 50px -25px rgba(99,102,241,.4)}
   .card .n{font-size:13px;font-weight:700;color:var(--i2);letter-spacing:.04em}
   .card h4{font-family:var(--serif);margin:10px 0 8px;font-size:19px}.card p{margin:0;color:var(--muted);font-size:14.5px}
+  .sonar{display:flex;flex-direction:column;gap:14px;max-width:820px}
+  .srow{display:grid;grid-template-columns:60px 1fr;gap:18px;align-items:start}
+  .srow h4{font-family:var(--serif);margin:0 0 4px;font-size:18px}.srow p{margin:0;color:var(--muted);font-size:14.5px}
+  .badge{width:54px;height:54px;border-radius:15px;background:linear-gradient(135deg,var(--i1),var(--i2));display:grid;place-items:center;font-family:var(--serif);font-weight:700;font-size:24px;color:#06121a;box-shadow:0 10px 30px -12px var(--i1)}
   .panel .tag{font-size:12px;letter-spacing:.06em;text-transform:uppercase;font-weight:700}
   .panel.off .tag{color:#a5b4fc}.panel.def .tag{color:var(--warm)}
   .panel h4{font-family:var(--serif);margin:10px 0 8px;font-size:21px}
@@ -185,12 +189,15 @@
   </section>
 
   <section class="reveal" id="comment">
-    <h2>Comment ça marche</h2>
-    <p class="lead">On mesure, on vous montre le verbatim, on vous fait recommander. Pas un dashboard à gérer — un résultat livré chaque semaine.</p>
-    <div class="grid3">
-      <div class="card"><div class="n">01 — SCAN</div><h4>On interroge les IA</h4><p>Requêtes d'acquisition + de réputation envoyées aux 4 moteurs. On capture ce qu'ils disent, mot pour mot.</p></div>
-      <div class="card"><div class="n">02 — DIAGNOSTIC</div><h4>Votre Surfaced Score</h4><p>Part de voix vs concurrents, requêtes perdues, et le verbatim de l'IA sur vous. Clair, chiffré, actionnable.</p></div>
-      <div class="card"><div class="n">03 — PILOTE</div><h4>On vous fait recommander</h4><p>Contenu citable, schema, avis, citations. Suivi chaque semaine jusqu'à devenir la réponse par défaut.</p></div>
+    <span class="eyebrow"><span class="dot"></span> Notre méthode propriétaire</span>
+    <h2>La méthode <span class="g">SONAR</span></h2>
+    <p class="lead">On ne « devine » pas ce que veut l'IA. On le mesure, on remonte à ses sources, et on les occupe — en boucle, jusqu'à ce que vous soyez la réponse. C'est ce qui nous sépare d'un simple outil de mesure.</p>
+    <div class="sonar">
+      <div class="card"><div class="srow"><div class="badge">S</div><div><h4>Scan multi-moteur</h4><p>On interroge les VRAIS ChatGPT, Perplexity, Google AI &amp; Claude sur les requêtes de vos patients — acquisition (« meilleure clinique ») <b style="color:var(--txt)">et</b> réputation (« que vaut la vôtre »). On capture les réponses, mot pour mot.</p></div></div></div>
+      <div class="card"><div class="srow"><div class="badge">O</div><div><h4>Origines des recommandations</h4><p>On remonte aux <b style="color:var(--txt)">sources exactes</b> que l'IA cite (avis, annuaires, comparatifs, presse, forums). On sait précisément pourquoi elle recommande vos concurrents — et pas vous.</p></div></div></div>
+      <div class="card"><div class="srow"><div class="badge">N</div><div><h4>Niveau : votre Surfaced Score</h4><p>Part de voix, rang, sentiment, réputation entité — votre note de référence sur 100. Celle qu'on fait monter, semaine après semaine.</p></div></div></div>
+      <div class="card"><div class="srow"><div class="badge">A</div><div><h4>Autorité : on vous rend citable</h4><p>On produit et publie ce que l'IA lit : contenu citable, balisage schema.org, fiches annuaires, stratégie d'avis. Du travail livré, pas un PDF.</p></div></div></div>
+      <div class="card"><div class="srow"><div class="badge">R</div><div><h4>Re-mesure hebdomadaire</h4><p>On re-scanne chaque semaine, on ajuste, jusqu'à ce que l'IA fasse de vous la réponse par défaut. Vous voyez l'effet de chaque action.</p></div></div></div>
     </div>
   </section>
 
@@ -229,6 +236,19 @@
         <tr><td>Prix d'entrée</td><td class="us col-us">490 € (crédité)</td><td>Centaines €/mois</td></tr>
       </tbody>
     </table>
+  </section>
+
+  <section class="reveal">
+    <h2>Pourquoi Surfaced est <span class="g">le meilleur sur le marché</span></h2>
+    <p class="lead">Les autres se contentent de mesurer. Nous, on mesure, on comprend la mécanique, et on agit — sur un terrain que personne d'autre ne couvre.</p>
+    <div class="grid3">
+      <div class="card"><div class="n">4 MOTEURS, PAS 1</div><h4>Triangulation</h4><p>La plupart regardent un seul moteur. On croise ChatGPT, Perplexity, Google AI &amp; Claude — la seule vraie photo.</p></div>
+      <div class="card"><div class="n">UNIQUE SUR LE MARCHÉ</div><h4>Offense + Défense</h4><p>On ne mesure pas que votre classement. On mesure ce que l'IA dit de <b style="color:var(--txt)">vous</b>. Personne d'autre ne le fait.</p></div>
+      <div class="card"><div class="n">CONCRET</div><h4>Reverse-engineering des sources</h4><p>On ne devine pas : on remonte aux sources exactes que l'IA cite, puis on vous y place. La cause, pas le symptôme.</p></div>
+      <div class="card"><div class="n">DONE-FOR-YOU</div><h4>On fait le travail</h4><p>Pas un dashboard à piloter. On produit, on publie, on suit. Vous regardez le score monter.</p></div>
+      <div class="card"><div class="n">PROPRIÉTAIRE</div><h4>Le Surfaced Score</h4><p>La première note de réputation IA, re-mesurée chaque semaine. Votre boussole, pas un chiffre abstrait.</p></div>
+      <div class="card"><div class="n">RISQUE ZÉRO</div><h4>Gratuit si rien trouvé</h4><p>Le seul à inverser le risque : si le Diagnostic ne révèle pas 3 leviers concrets, il est gratuit.</p></div>
+    </div>
   </section>
 
   <section class="reveal" id="scan">
